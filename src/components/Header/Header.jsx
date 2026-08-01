@@ -1,4 +1,3 @@
-import { Building2 } from "lucide-react";
 import "./Header.css";
 
 function Header() {
@@ -6,13 +5,15 @@ function Header() {
     <header className="header">
       <div className="header__contenedor contenedor">
         <a className="header__marca" href="#inicio">
-          <span className="header__logo">
-            <Building2 size={23} strokeWidth={2} />
-          </span>
+          <img
+            className="header__logo-imagen"
+            src="/logos/qualisProFull.png"
+            alt="Qualis Pro"
+          />
 
           <span className="header__identidad">
-            <strong>ACR Consultoría</strong>
-            <small>Ingeniería · Gestión · Cumplimiento</small>
+            <strong>Qualis Pro</strong>
+            <small>Excelencia operacional · Cumplimiento · Resultados</small>
           </span>
         </a>
 

@@ -1,36 +1,59 @@
-import { methodologySteps } from "../../data/methodology";
+import {
+  CircleCheckBig,
+  ClipboardList,
+  FileSearch,
+} from "lucide-react";
+
 import "./Methodology.css";
+
+const steps = [
+  {
+    number: "01",
+    title: "Diagnóstico",
+    description:
+      "Levantamos riesgos, procesos críticos y oportunidades con mirada ejecutiva y técnica.",
+    icon: FileSearch,
+  },
+  {
+    number: "02",
+    title: "Plan de Acción",
+    description:
+      "Priorizamos iniciativas, responsables, indicadores y decisiones con impacto operativo real.",
+    icon: ClipboardList,
+  },
+  {
+    number: "03",
+    title: "Implementación y Resultados",
+    description:
+      "Acompañamos la ejecución, medimos avances y transferimos capacidades al equipo interno.",
+    icon: CircleCheckBig,
+  },
+];
 
 function Methodology() {
   return (
-    <section className="methodology" id="metodologia">
-      <div className="methodology__contenedor contenedor">
-        <div className="methodology__encabezado">
-          <span className="etiqueta-seccion">Metodología</span>
+    <section className="methodology-new" id="metodologia">
+      <div className="methodology-new__container contenedor">
+        <div className="methodology-new__heading">
+          <span>Metodología</span>
 
-          <h2 className="titulo-seccion">
-            Una ruta simple para pasar de la brecha al resultado sostenible.
+          <h2>
+            De la evaluación técnica
+            <br />
+            al resultado medible
           </h2>
-
-          <p className="texto-seccion">
-            Trabajamos con equipos internos para que las soluciones no se
-            queden en documentos: se implementen, se midan y se mantengan.
-          </p>
         </div>
 
-        <div className="methodology__grid">
-          {methodologySteps.map((step) => (
-            <article
-              className={`methodology-card ${
-                step.featured ? "methodology-card--featured" : ""
-              }`}
-              key={step.id}
-            >
-              <span className="methodology-card__numero">{step.number}</span>
+        <div className="methodology-new__grid">
+          {steps.map(({ number, title, description, icon: Icon }) => (
+            <article className="methodology-new__card" key={number}>
+              <div className="methodology-new__card-top">
+                <strong>{number}</strong>
+                <Icon size={25} aria-hidden="true" />
+              </div>
 
-              <h3>{step.title}</h3>
-
-              <p>{step.description}</p>
+              <h3>{title}</h3>
+              <p>{description}</p>
             </article>
           ))}
         </div>

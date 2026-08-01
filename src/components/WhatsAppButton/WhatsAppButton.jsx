@@ -14,7 +14,7 @@ import "./WhatsAppButton.css";
 const WHATSAPP_NUMBER = "51923924073";
 
 const WHATSAPP_MESSAGE =
-  "Hola, vi la página de ACR Consultoría y me gustaría solicitar información sobre sus servicios.";
+  "Hola, vi la página de Qualis Pro y me gustaría solicitar información sobre sus servicios.";
 
 function WhatsAppButton() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(

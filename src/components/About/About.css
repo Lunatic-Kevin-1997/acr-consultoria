@@ -1,95 +1,175 @@
-.about {
-  padding-block: 90px 84px;
-  background-color: var(--blanco);
+.leadership {
+  padding: 110px 0 88px;
+  background-color: #f7f9fb;
 }
 
-.about__contenedor {
+.leadership__intro {
   display: grid;
-  grid-template-columns: minmax(0, 510px) 522px;
-  align-items: center;
-  gap: 52px;
+  grid-template-columns: minmax(280px, 0.75fr) minmax(500px, 1.25fr);
+  align-items: start;
+  gap: 72px;
 }
 
-.about__informacion .titulo-seccion {
-  max-width: 450px;
-  font-size: 40px;
+.leadership__heading {
+  padding-top: 18px;
 }
 
-.about__informacion .texto-seccion {
-  max-width: 560px;
-  margin-top: 22px;
+.leadership__heading .section-title {
+  margin-top: 25px;
 }
 
-.about__tarjeta {
-  width: 100%;
-  min-height: 275px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--azul-claro);
-  border: 1px solid #c8d9fa;
-  border-radius: 26px;
-}
-
-.about__numero {
+.leadership__line {
   display: block;
-  color: var(--azul-principal);
-  font-size: clamp(62px, 7vw, 80px);
-  line-height: 0.9;
-  letter-spacing: -5px;
+  width: 120px;
+  height: 2px;
+  margin-top: 28px;
+  background: linear-gradient(90deg, #c8a65e, transparent);
 }
 
-.about__tarjeta h3 {
+.leadership__description-card {
+  padding: 36px 38px;
+  background-color: #ffffff;
+  border: 1px solid #e4e9ee;
+  border-radius: 26px;
+  box-shadow: 0 20px 45px rgba(14, 31, 48, 0.05);
+}
+
+.leadership__description-card p {
+  color: #34475c;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.leadership__tags {
   margin-top: 22px;
-  color: var(--azul-oscuro);
-  font-size: 22px;
-  line-height: 1.3;
-  letter-spacing: -0.7px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
 }
 
-.about__lista {
-  margin-top: 20px;
+.leadership__tags span {
+  padding: 8px 13px;
+  color: #102237;
+  background-color: #f2f4f6;
+  border: 1px solid #dce2e7;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.founders {
+  margin-top: 58px;
+}
+
+.founders__heading {
+  text-align: center;
+}
+
+.founders__heading h3 {
+  margin-top: 13px;
+  color: #0b1d30;
+  font-size: clamp(27px, 3vw, 36px);
+  line-height: 1.2;
+  letter-spacing: -1.1px;
+}
+
+.founders__grid {
+  margin-top: 40px;
   display: grid;
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
-.about__lista li {
-  position: relative;
-  padding-left: 12px;
-  color: #334c70;
+.founder-card {
+  min-height: 216px;
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e0e6eb;
+  border-radius: 25px;
+  box-shadow: 0 18px 38px rgba(15, 32, 48, 0.06);
+}
+
+.founder-card__media {
+  width: 150px;
+  height: 170px;
+  overflow: hidden;
+  background-color: #34495e;
+  border-radius: 20px;
+}
+
+.founder-card__image,
+.founder-card__placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.founder-card__image {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.founder-card__placeholder {
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background-color: #3d5368;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.founder-card__role {
+  color: #9b742d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.founder-card h4 {
+  margin-top: 11px;
+  color: #07192b;
+  font-size: 23px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.founder-card p {
+  margin-top: 13px;
+  color: #506176;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 
-.about__lista li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--azul-principal);
-}
-
-@media (max-width: 900px) {
-  .about__contenedor {
+@media (max-width: 950px) {
+  .leadership__intro {
     grid-template-columns: 1fr;
-    gap: 44px;
+    gap: 38px;
   }
 
-  .about__informacion .titulo-seccion,
-  .about__informacion .texto-seccion {
-    max-width: 720px;
+  .founders__grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 600px) {
-  .about {
-    padding-block: 64px;
+  .leadership {
+    padding: 72px 0;
   }
 
-  .about__tarjeta {
-    min-height: auto;
-    padding: 26px;
-    border-radius: 22px;
+  .leadership__description-card {
+    padding: 27px 24px;
+  }
+
+  .founder-card {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-card__media {
+    width: 100%;
+    height: 260px;
   }
 }

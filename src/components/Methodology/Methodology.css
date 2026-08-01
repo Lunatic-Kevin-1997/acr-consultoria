@@ -1,93 +1,80 @@
-.methodology {
-  padding-block: 88px;
-  background-color: var(--blanco);
+.methodology-new {
+  padding: 105px 0 110px;
+  color: #ffffff;
+  background-color: #0b1d30;
 }
 
-.methodology__encabezado {
-  max-width: 720px;
-  margin-inline: auto;
+.methodology-new__heading {
   text-align: center;
 }
 
-.methodology__encabezado .texto-seccion {
-  max-width: 650px;
-  margin: 18px auto 0;
+.methodology-new__heading > span {
+  color: #e3c781;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
 }
 
-.methodology__grid {
-  margin-top: 38px;
+.methodology-new__heading h2 {
+  margin-top: 26px;
+  color: #ffffff;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.13;
+  letter-spacing: -1.6px;
+}
+
+.methodology-new__grid {
+  margin-top: 57px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 22px;
 }
 
-.methodology-card {
-  min-height: 275px;
-  padding: 26px;
-  background-color: var(--fondo-general);
-  border: 1px solid var(--borde);
-  border-radius: 25px;
+.methodology-new__card {
+  min-height: 230px;
+  padding: 29px 27px;
+  background-color: #102338;
+  border: 1px solid #294057;
+  border-radius: 23px;
 }
 
-.methodology-card__numero {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  color: var(--blanco);
-  background-color: var(--azul-principal);
-  border-radius: 50%;
-  font-size: 13px;
-  font-weight: 800;
+.methodology-new__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e3c781;
 }
 
-.methodology-card h3 {
-  margin-top: 22px;
-  color: var(--azul-oscuro);
-  font-size: 21px;
-  line-height: 1.25;
-  letter-spacing: -0.7px;
+.methodology-new__card-top strong {
+  font-size: 45px;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 
-.methodology-card p {
-  margin-top: 18px;
-  color: var(--texto-secundario);
-  font-size: 16px;
-  line-height: 1.75;
+.methodology-new__card h3 {
+  margin-top: 25px;
+  color: #ffffff;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 20px;
 }
 
-.methodology-card--featured {
-  color: var(--blanco);
-  background-color: var(--azul-oscuro);
-  border-color: var(--azul-oscuro);
-}
-
-.methodology-card--featured .methodology-card__numero {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-.methodology-card--featured h3,
-.methodology-card--featured p {
-  color: var(--blanco);
+.methodology-new__card p {
+  margin-top: 14px;
+  color: #c2ccd6;
+  font-size: 14px;
+  line-height: 1.65;
 }
 
 @media (max-width: 900px) {
-  .methodology__grid {
+  .methodology-new__grid {
     grid-template-columns: 1fr;
-  }
-
-  .methodology-card {
-    min-height: auto;
   }
 }
 
 @media (max-width: 600px) {
-  .methodology {
-    padding-block: 64px;
-  }
-
-  .methodology-card {
-    padding: 24px;
-    border-radius: 22px;
+  .methodology-new {
+    padding: 72px 0;
   }
 }
