@@ -1,0 +1,95 @@
+.about {
+  padding-block: 90px 84px;
+  background-color: var(--blanco);
+}
+
+.about__contenedor {
+  display: grid;
+  grid-template-columns: minmax(0, 510px) 522px;
+  align-items: center;
+  gap: 52px;
+}
+
+.about__informacion .titulo-seccion {
+  max-width: 450px;
+  font-size: 40px;
+}
+
+.about__informacion .texto-seccion {
+  max-width: 560px;
+  margin-top: 22px;
+}
+
+.about__tarjeta {
+  width: 100%;
+  min-height: 275px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--azul-claro);
+  border: 1px solid #c8d9fa;
+  border-radius: 26px;
+}
+
+.about__numero {
+  display: block;
+  color: var(--azul-principal);
+  font-size: clamp(62px, 7vw, 80px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+}
+
+.about__tarjeta h3 {
+  margin-top: 22px;
+  color: var(--azul-oscuro);
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.7px;
+}
+
+.about__lista {
+  margin-top: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.about__lista li {
+  position: relative;
+  padding-left: 12px;
+  color: #334c70;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.about__lista li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--azul-principal);
+}
+
+@media (max-width: 900px) {
+  .about__contenedor {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .about__informacion .titulo-seccion,
+  .about__informacion .texto-seccion {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding-block: 64px;
+  }
+
+  .about__tarjeta {
+    min-height: auto;
+    padding: 26px;
+    border-radius: 22px;
+  }
+}
