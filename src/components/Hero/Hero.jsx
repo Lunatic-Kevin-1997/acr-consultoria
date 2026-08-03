@@ -11,16 +11,11 @@ function Hero() {
       <div className="hero-redesign__contenedor contenedor">
         <header className="hero-header">
           <a className="hero-header__brand" href="#inicio">
-            <span className="hero-header__icon">
-              <img
-                src="/logos/qP.png"
-                alt=""
-                aria-hidden="true"
-                onError={handleImageError}
-              />
-            </span>
-
-            <span className="hero-header__name">Qualis Pro</span>
+            <img
+              className="hero-header__logo-image" 
+              src="/logos/qualisPro.png"
+              alt="Qualis Pro" 
+            />
           </a>
 
           <span className="hero-header__descriptor">

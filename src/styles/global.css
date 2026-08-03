@@ -1,27 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Slab:wght@700;800&display=swap");
 
 :root {
-  --navy-950: #07192b;
-  --navy-900: #0c2035;
-  --navy-850: #10243a;
-  --navy-800: #162a40;
-
-  --gold-500: #d7b56c;
-  --gold-400: #e2c98f;
-  --gold-200: #f2e7cb;
-
-  --orange-500: #cc562c;
-  --teal-700: #083d4b;
+  --brand-navy: #071b2c;
+  --brand-navy-2: #0c2236;
+  --brand-teal: #123f4b;
+  --brand-orange: #c86534;
+  --brand-gold: #dfc37d;
+  --brand-gold-2: #e9d49c;
 
   --surface: #ffffff;
-  --surface-soft: #f1f5f8;
-  --surface-card: #f8fafc;
+  --surface-soft: #f4f7f9;
+  --surface-card: #fbfcfd;
 
-  --text-dark: #101f31;
+  --text-dark: #102132;
   --text-secondary: #5a6878;
-  --text-light: #f7f9fb;
+  --text-light: #f8fafc;
 
-  --border: #dce4eb;
+  --border: #dde5eb;
 
   font-family: "Inter", Arial, sans-serif;
   color: var(--text-dark);

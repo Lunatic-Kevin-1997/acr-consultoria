@@ -33,9 +33,9 @@
   height: 52px;
   display: grid;
   place-items: center;
-  color: #997024;
-  background-color: #faf6ed;
-  border: 1px solid #e8dbc0;
+  color: var(--brand-teal);
+  background-color: #faf4e9;
+  border: 1px solid #ead8b9;
   border-radius: 15px;
 }
 

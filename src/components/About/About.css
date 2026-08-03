@@ -23,7 +23,7 @@
   width: 120px;
   height: 2px;
   margin-top: 28px;
-  background: linear-gradient(90deg, #c8a65e, transparent);
+  background: linear-gradient(90deg, var(--brand-orange), transparent);
 }
 
 .leadership__description-card {
@@ -49,9 +49,9 @@
 
 .leadership__tags span {
   padding: 8px 13px;
-  color: #102237;
-  background-color: #f2f4f6;
-  border: 1px solid #dce2e7;
+  color: var(--brand-teal);
+  background-color: #f7f3ea;
+  border: 1px solid #ead9bd;
   border-radius: 999px;
   font-size: 11px;
   font-weight: 800;
@@ -122,7 +122,7 @@
 }
 
 .founder-card__role {
-  color: #9b742d;
+  color: var(--brand-orange);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 1.4px;
